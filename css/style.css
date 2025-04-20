@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI.eot');
+    src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI.woff2') format('woff2'),
+        url('../fonts/SegoeUI.woff') format('woff'),
+        url('../fonts/SegoeUI.ttf') format('truetype'),
+        url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merienda Regular';
+    src: url('../fonts/merienda-regular-webfont.eot');
+    src: url('../fonts/merienda-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/merienda-regular-webfont.woff2') format('woff2'),
+        url('../fonts/merienda-regular-webfont.woff') format('woff'),
+        url('../fonts/merienda-regular-webfont.ttf') format('truetype'),
+        url('../fonts/merienda-regular-webfont.svg#meriendaregular') format('svg');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Media querys*/
+@media only screen and (max-width: 1176px) {
+
+    body {
+        font-size: 1.5vw;
+    }
+
+    .featured {
+        flex-wrap: wrap;
+        background-color: rgba(247, 223, 181, 0.980);
+    }
+
+    .fp-video,
+    .ft-articulo {
+        padding: 2em;
+    }
+
+    .ft-articulo h1 {
+        display: inline-block;
+    }
+
+    .fp-video iframe {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Merienda Regular';
+    color: #1b1503;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 1em 0;
+}
+
+header {
+  
+    width: 100%;
+}
+
+nav {
+    width: 70%;
+    height: 9vw;
+    background-color: #ed1c23ee;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*Ubica los elementos del menu de manera flotante a la derecha*/
+}
+
+nav ul li {
+    list-style-type: none;
+    /*Quitar viñetas*/
+    display: inline-block;
+    /*Posisiona elementos uno al lado del otro*/
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+nav ul li:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #1b1503;
+    transition: 0.8s all;
+    /*Transision de movimiento al pasar el mouse por encima*/
+}
+
+/*Agregar estilos a los hipervínculos*/
+nav ul li a {
+    /*Quita la línea de los hipervínculos*/
+    text-decoration: none;
+}
+
+/*Estilizar el logo*/
+.img-logo {
+    width: 6vw;
+    top: 15%;
+    position: absolute;
+    vertical-align: center;
+    left: 4%;
+}
+
+/*Slider automatico*/
+.slider {
+    width: 100%;
+    margin-top: 9.5vw;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 30s infinite alternate linear;
+    width: 300%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    14% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: -100%;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    41% {
+        margin-left: -200%;
+    }
+
+    57% {
+        margin-left: -200%;
+    }
+
+    63% {
+        margin-left: -100%;
+    }
+
+    79% {
+        margin-left: -100%;
+    }
+
+    85% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+/*Fin Slider automatico*/
+
+section {
+    margin-top: 0.5vw;
+}
+
+@media only screen and (min-width: 1176px) {
+
+    /*Estilo para la sección feature*/
+    .featured {
+        display: flex;
+        background-color: rgba(247, 223, 181, 0.980);
+    }
+
+    /*Estilizar el video*/
+    .fp-video,
+    .ft-articulo {
+        width: 50%;
+        padding: 2em;
+    }
+
+    .ft-articulo h1 {
+        display: inline-block;
+    }
+
+    .fp-video iframe {
+        width: 100%;
+        padding: 2em;
+    }
+}
+
+/*Estilo general para todos los artículos*/
+article {
+    background-color: rgba(247, 223, 181, 0.980);
+}
+
+article h1 {
+    border-bottom: solid thin black;
+    /*Subraya el artículo de h1 "Recetas del mundo"*/
+}
+
+/*Estilizar el botón*/
+.boton-container {
+    text-align: center;
+    background-color: rgba(237, 28, 35, 0.980);
+    margin: 0 auto;
+    /*Centra el artículo*/
+}
+
+.boton-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.boton {
+    padding: 15px;
+    /*Botón con más ancho*/
+}
+
+/*Animación para el botón al pasar el puntero del mouse*/
+.boton-container :hover {
+    background-color: #34E0A1;
+    color: #1b1503;
+    transition: 0.4s all;
+}
+
+.art-imagen {
+    width: 100%;
+}
+
+.art-imagen img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.art-cont {
+    padding: 2em 4em;
+}
+
+h2 { 
+    border-bottom: solid thin black;
+    /*Subrayar el artículo de h2 "Recetas del mundo" subrayado delgado*/
+    display: inline-block;
+}
+
+.ft-articulo-3 {
+    margin-top: 0.5vw;
+}
+
+footer {
+    background-color: rgb(237, 28, 36);
+    position: relative;
+    clear: both;
+    /*Limpia y carga elementos no flotantes*/
+    height: 150px;
+    margin-top: 0.5vw;
+}
+
+.social-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.social {
+    margin: 0 0.5%;
+}
+
+.social .fa-brands {
+    font-size: 2.4em;
+    color: #f0f0f0;
+    padding: 6px 7px;
+    border-radius: 6px;
+    transition: 0.4s all;
+}
+
+.social .fa-brands:hover {
+    animation: rubberBand; 
+    animation-duration: 0.8s;
+}
+
+.copyright {
+    font-family: 'Segoe UI';
+    color: #dbdbdb;
+    font-style: normal;
+    font-size: small;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    bottom: 8px;
+}

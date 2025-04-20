@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="font-awesome-6.1.1/css/all.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+    <!--header: incluir logo, menú y slider-->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="img-logo" src="./img/logo.png" alt="Logo de la cocina">
+            </a>
+            <!--Lista desordenada-->
+            <ul>
+                <li>Inicio</li>
+                <li>Receta Colombiana</li>
+                <li>Receta México</li>
+                <li>Receta España</li>
+            </ul>
+        </nav>
+
+        <!--Slider automático-->
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="img/banner-1.png">
+                </li>
+                <li>
+                    <img src="img/banner-2.png">
+                </li>
+                <li>
+                    <img src="img/banner-3.png">
+                </li>
+                
+            </ul>
+        </div>
+        <!--Fin Slider automático-->
+    </header>
+
+    <!--Primera sección con video y artículo-->
+    <section class="featured">
+        <!--Pegamos el Iframe del video-->
+        <div class="fp-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0HMqd7S3hVc" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <!--Agregar artículo-->
+        <article class="ft-articulo">
+            <h1>Recetas del mundo</h1>
+            <p>Qué mejor forma de viajar que a través de recetas de todas las partes del mundo. La comida tiene la capacidad
+                de transpórtanos hasta cualquier lugar a través de los sabores, y nunca antes había sido tan fácil acceder a
+                los secretos de lejanas gastronomías o conseguir los productos necesarios para su cocinado como ahora.
+            </p>
+
+            <!--Crear el contenedor div y el boton-->
+            <div class="boton-container">
+                <a href="#">
+                    <div class="boton">Más info</div>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <!--Segunda sección-->
+    <section>
+        <!--Artículo 2-->
+        <article>
+            <!--Imagen o contenido multimedia-->
+            <figure class="art-imagen">
+                <img src="./img/peru2.png" alt="imagen2">
+            </figure>
+            <div class="art-cont">
+                <h2>Receta rachi peruano</h2>
+                <p>El rachi peruano es una de las recetas más populares de la cocina del Perú. Es uno de los platos
+                    estrella en las barbacoas y se suele preparar junto con los anticuchos. Se trata de cocer el
+                    librillo de res, marinarlo durante unas horas y después saltearlo en la parrilla o sartén.
+                    Se acompaña de papas sancochadas o elote y alguna salsa especial con algún ají picante.
+                </p>
+            </div>
+        </article>
+
+        <!--Artículo 3-->
+        <article class="ft-articulo-3">
+            <figure class="art-imagen">
+                <img src="./img/tacos.png" alt="imagen3">
+            </figure>
+            <div class="art-cont">
+                <h2>Receta tacos mexicanos</h2>
+                <p>Los tacos mexicanos son una popular receta de este país americano. Consiste en carne, generalmente
+                    de ternera (o res como lo llaman allí) o de pollo, cocinada junto a tomate y después introducida
+                    dentro de una tortilla de maíz o trigo. Finalmente se adereza con pico de gallo, una salsa típica
+                    del país. Un plato con mucha personalidad y que sin duda sabe a méxico. Aquí, lo haremos con carne
+                    picada aunque, en realidad se hace con trozos de carne cortadas en tiras, cocinada durante dos horas o más.
+                </p>
+            </div>
+        </article>
+    </section>
+
+
+    <!--footer-->
+    <footer>
+        <!--Contenedor para redes sociales-->
+        <div class="social-container">
+            <a class="social" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a class="social" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social" href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            <a class="social" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+            <a class="social" href="https://www.pinterest.es" target="_blank"><i class="fa-brands fa-pinterest-square"></i></a>
+        </div>
+        <address class="copyright">Copyright &copy 2022 Reservados todos los derechos</address>
+    </footer>
+
+</body>
+
+</html>
